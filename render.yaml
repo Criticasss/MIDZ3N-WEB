@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: midzen-studios
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.0
